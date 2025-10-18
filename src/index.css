@@ -1,0 +1,34 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f8fafc;
+  --panel: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+}
+
+html.dark {
+  --bg: #0f1724;
+  --panel: #111827;
+  --text: #e6eef8;
+  --muted: #9ca3af;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+.panel, .card, .bg-white {
+  background-color: var(--panel) !important;
+  color: var(--text) !important;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+.text-muted {
+  color: var(--muted) !important;
+}
